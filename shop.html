@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitify</title>
+    <link type="image/png" rel="icon" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="flex justify-between max-w-7xl mx-auto py-4 px-6">
+            <a href="index.html"><h1 class="font-extrabold text-3xl text-green-600">Fruitify</h1></a>
+            <nav class="md:flex hidden gap-8">
+                <a href="index.html" class="hover:text-green-500 font-medium">Home</a>
+                <a href="shop.html" class="hover:text-green-500 font-medium">Shop</a>
+                <a href="about.html" class="hover:text-green-500 font-medium">About</a>
+                <a href="article.html" class="hover:text-green-500 font-medium">Article</a>
+                <a href="contact.html" class="hover:text-green-500 font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-green-600 text-2xl" id="menuBtn">☰</button>
+        </div>
+
+        <!--Mobile Menu-->
+        <div class="hidden flex flex-col bg-white shadow-md md:hidden text-center" id="mobileMenu">
+            <a href="index.html" class="hover:bg-green-100 py-2 px-6">Home</a>
+            <a href="shop.html" class="hover:bg-green-100 py-2 px-6">Shop</a>
+            <a href="about.html" class="hover:bg-green-100 py-2 px-6">About</a>
+            <a href="article.html" class="hover:bg-green-100 py-2 px-6">Article</a>
+            <a href="contact.html" class="hover:bg-green-100 py-2 px-6">Contact</a>
+        </div>
+    </header>
+
+    <section class="bg-[url('images/shop.jpg')] w-full h-auto">
+        <div class="text-center p-20 space-y-6 bg-black/30">
+            <h1 class="text-white text-6xl font-extrabold">Testy & Yummy</h1>
+            <p class="text-white">Welcome to Fruitify, where nature’s sweetness meets freshness! 🍉 We hand-select the finest, farm-fresh fruits delivered straight from local growers to your hands. From juicy mangoes and crisp apples to exotic berries and citrus delights — every bite is pure health and happiness.  Eat fresh. Stay healthy. Live vibrant! 🍓🥭🍇</p>
+            <button class="border-none bg-green-600 px-4 py-3 text-white font-semibold hover:bg-green-700 rounded-lg">Let's Go</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 my-10">Shop Now</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/apple.webp" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Fresh Red and Green Apples</h3>
+                <p class="text-gray-500 pb-2">Crisp, juicy apples packed with vitamins and antioxidants.</p>
+                <span class="font-bold text-green-600">$3.99 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/mangos.jpg" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Sweet Mangoes</h3>
+                <p class="text-gray-500 pb-2">Ripe, tropical mangoes with an irresistible aroma.</p>
+                <span class="font-bold text-green-600">$5.49 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/graps.webp" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Seedless Grapes</h3>
+                <p class="text-gray-500 pb-2">Naturally sweet and perfect for snacking or juice.</p>
+                <span class="font-bold text-green-600">$4.29 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+                        <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/banana.webp" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Banana</h3>
+                <p class="text-gray-500 pb-2">Soft, sweet, and starchy.A thick, peelable outer covering.</p>
+                <span class="font-bold text-green-600">$4.29 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+                        <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/dragon.webp" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Dragon Fruit</h3>
+                <p class="text-gray-500 pb-2">Mildly sweet, often compared to a mix of kiwi and pear. </p>
+                <span class="font-bold text-green-600">$4.29 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+                        <div class="rounded-xl border-none shadow hover:shadow-lg transition duration-300 overflow-hidden bg-green-50 hover:scale-[1.02] m-2">
+                <img src="images/strawberry.jpg" alt="apple">
+                <div class="text-center p-6">
+                <h3 class="text-lg font-semibold pb-2">Sweet Strawberry</h3>
+                <p class="text-gray-500 pb-2"> Sweet and slightly sour. Rich in vitamin C.</p>
+                <span class="font-bold text-green-600">$4.29 / kg</span>
+                <div class="flex justify-between pt-4">
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Buy</span>
+                <span class="border-none bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded-lg">Discount %</span>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="my-20 bg-green-100 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mx-4">
+            <h1 class="text-3xl font-bold text-green-600 pb-4">Why Choose Fruitify?</h1>
+            <p class="text-gray-500 pb-6">At Fruitify, we go beyond delivering fruits — we deliver health, happiness, and freshness straight to your doorstep. 🍏 Here's why our customers love us:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="text-center space-y-2 border-none bg-white shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-leaf text-3xl text-green-600"></i>
+                <h4 class="text-xl font-semibold">100% Fresh & Organic</h4>
+                <p class="text-gray-500">We source directly from trusted farms ensuring no chemicals or preservatives.</p>
+            </div>
+                <div class="text-center space-y-2 border-none bg-white shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-truck text-3xl text-green-600"></i>
+                <h4 class="text-xl font-semibold">Fast Home Delivery</h4>
+                <p class="text-gray-500">Your fruits are packed with care and delivered fresh to your home.</p>
+            </div>
+                <div class="text-center space-y-2 border-none bg-white shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-heart text-3xl text-green-600"></i>
+                <h4 class="text-xl font-semibold">Love by Customers</h4>
+                <p class="text-gray-500">Thousands of happy customers trust us for their daily fruit needs.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20 space-y-4">
+            <h1 class="text-3xl font-extrabold text-green-600">What Our Customers Say</h1>
+            <p class="text-gray-500">Hear from some of our lovely customers who made Fruitify part of their healthy lifestyle 🍓</p>
+        </div>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="text-center space-y-2 border-none bg-green-100 shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-phone-volume text-3xl text-green-600"></i>
+                <p class="text-gray-500">"Fruitify has changed my mornings! The fruits are always fresh and delicious."</p>
+                <h4 class="text-xl font-semibold text-green-600">— Rafiul Islam</h4>
+                
+            </div>
+                <div class="text-center space-y-2 border-none bg-green-100 shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-phone-volume text-3xl text-green-600"></i>
+                <p class="text-gray-500">"I love the quick delivery and packaging. Highly recommend to everyone!"</p>
+                                <h4 class="text-xl font-semibold text-green-600">— Nishat Mahmud</h4>
+            </div>
+                <div class="text-center space-y-2 border-none bg-green-100 shadow-lg hover:scale-[1.02] p-6 mx-6 rounded-lg">
+                <i class="fa-solid fa-phone-volume text-3xl text-green-600"></i>
+                <p class="text-gray-500">"The taste of the mangoes took me back to my village! Absolutely natural!"</p>
+                <h4 class="text-xl font-semibold text-green-600">— Arian Chowdhury</h4>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="bg-green-600 mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="p-6">
+            <h2 class="text-3xl font-extrabold text-white pb-2">Fruitify</h2>
+            <p class="text-green-100">Bringing the finest, farm-fresh fruits straight from nature to your home. Eat fresh. Stay healthy. Live vibrant. 🍉</p>
+        <div class="flex justify-center">
+        <div class="text-center px-1 text-white hover:text-blue-200">
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <p>Facebook</p>
+        </div>
+            <div class="text-center px-1 text-white hover:text-pink-200">
+            <i class="fa-brands fa-square-instagram text-xl"></i>
+            <p>Instagram</p>
+        </div>
+            <div class="text-center px-1 text-white hover:text-gray-200">
+            <i class="fa-brands fa-square-x-twitter text-xl"></i>
+            <p>Twitter</p>
+        </div>
+        </div>
+        </div>
+        <div class="flex flex-col p-6 space-y-2">
+            <h2 class="text-xl font-semibold text-white pb-2">Quick Links</h2>
+            <a href="index.html" class="text-green-100 hover:text-white">Home</a>
+            <a href="shop.html" class="text-green-100 hover:text-white">Shop</a>
+            <a href="about.html" class="text-green-100 hover:text-white">About</a>
+            <a href="article.html" class="text-green-100 hover:text-white">Article</a>
+            <a href="contact.html" class="text-green-100 hover:text-white">Contact</a>
+        </div>
+        <div class="p-6 space-y-2">
+            <h2 class="text-xl font-semibold text-white pb-2">Subscribe to Our Newsletter</h2>
+            <p class="text-green-100 ">Get the latest updates, offers, and healthy tips directly to your inbox.</p>
+            <div class="flex border p-2 rounded-lg">
+                <input type="email" placeholder="Enter Your e" class="w-full bg-green-600 text-green-100 focus:outline-green-400 p-1">
+                <button class="bg-green-400 p-2 rounded-lg hover:bg-green-700 text-white">Subscribe</button>
+            </div>
+        </div>
+        </div>
+        <div class="text-center py-6 border-t text-white">
+            © 2025 Fruitify. Made by ❤️ Aronno Chowdhury.
+        </div>
+    </footer>
+
+
+    <script src="fruit.js"></script>
+</body>
+</html>
